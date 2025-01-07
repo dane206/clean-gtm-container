@@ -1,0 +1,347 @@
+{
+    "containerVersion": {
+        "container": {
+            "publicId": "GTM-GA4Complete12",
+            "name": "GA4 Full 12 Ecommerce Events"
+        },
+        "tag": [
+            {
+                "tagId": "1",
+                "name": "GA4 View Item List",
+                "type": "ga4Event",
+                "parameter": [
+                    {
+                        "key": "eventName",
+                        "value": "view_item_list"
+                    },
+                    {
+                        "key": "parameters",
+                        "value": [
+                            {
+                                "key": "item_list_id",
+                                "value": "{{ecommerce.item_list_id}}"
+                            },
+                            {
+                                "key": "item_list_name",
+                                "value": "{{ecommerce.item_list_name}}"
+                            },
+                            {
+                                "key": "items",
+                                "value": "{{ecommerce.items}}"
+                            }
+                        ]
+                    }
+                ],
+                "firingTriggerId": [
+                    "1"
+                ]
+            },
+            {
+                "tagId": "2",
+                "name": "GA4 View Item",
+                "type": "ga4Event",
+                "parameter": [
+                    {
+                        "key": "eventName",
+                        "value": "view_item"
+                    },
+                    {
+                        "key": "parameters",
+                        "value": [
+                            {
+                                "key": "items",
+                                "value": "{{ecommerce.items}}"
+                            }
+                        ]
+                    }
+                ],
+                "firingTriggerId": [
+                    "2"
+                ]
+            },
+            {
+                "tagId": "3",
+                "name": "GA4 Add to Cart",
+                "type": "ga4Event",
+                "parameter": [
+                    {
+                        "key": "eventName",
+                        "value": "add_to_cart"
+                    },
+                    {
+                        "key": "parameters",
+                        "value": [
+                            {
+                                "key": "currency",
+                                "value": "{{ecommerce.currency}}"
+                            },
+                            {
+                                "key": "items",
+                                "value": "{{ecommerce.items}}"
+                            }
+                        ]
+                    }
+                ],
+                "firingTriggerId": [
+                    "3"
+                ]
+            },
+            {
+                "tagId": "4",
+                "name": "GA4 Remove from Cart",
+                "type": "ga4Event",
+                "parameter": [
+                    {
+                        "key": "eventName",
+                        "value": "remove_from_cart"
+                    },
+                    {
+                        "key": "parameters",
+                        "value": [
+                            {
+                                "key": "items",
+                                "value": "{{ecommerce.items}}"
+                            }
+                        ]
+                    }
+                ],
+                "firingTriggerId": [
+                    "4"
+                ]
+            },
+            {
+                "tagId": "5",
+                "name": "GA4 Begin Checkout",
+                "type": "ga4Event",
+                "parameter": [
+                    {
+                        "key": "eventName",
+                        "value": "begin_checkout"
+                    },
+                    {
+                        "key": "parameters",
+                        "value": [
+                            {
+                                "key": "currency",
+                                "value": "{{ecommerce.currency}}"
+                            },
+                            {
+                                "key": "value",
+                                "value": "{{ecommerce.value}}"
+                            },
+                            {
+                                "key": "items",
+                                "value": "{{ecommerce.items}}"
+                            }
+                        ]
+                    }
+                ],
+                "firingTriggerId": [
+                    "5"
+                ]
+            },
+            {
+                "tagId": "6",
+                "name": "GA4 Add Payment Info",
+                "type": "ga4Event",
+                "parameter": [
+                    {
+                        "key": "eventName",
+                        "value": "add_payment_info"
+                    },
+                    {
+                        "key": "parameters",
+                        "value": [
+                            {
+                                "key": "currency",
+                                "value": "{{ecommerce.currency}}"
+                            },
+                            {
+                                "key": "value",
+                                "value": "{{ecommerce.value}}"
+                            },
+                            {
+                                "key": "payment_type",
+                                "value": "{{ecommerce.payment_type}}"
+                            },
+                            {
+                                "key": "items",
+                                "value": "{{ecommerce.items}}"
+                            }
+                        ]
+                    }
+                ],
+                "firingTriggerId": [
+                    "6"
+                ]
+            },
+            {
+                "tagId": "7",
+                "name": "GA4 Add Shipping Info",
+                "type": "ga4Event",
+                "parameter": [
+                    {
+                        "key": "eventName",
+                        "value": "add_shipping_info"
+                    },
+                    {
+                        "key": "parameters",
+                        "value": [
+                            {
+                                "key": "currency",
+                                "value": "{{ecommerce.currency}}"
+                            },
+                            {
+                                "key": "value",
+                                "value": "{{ecommerce.value}}"
+                            },
+                            {
+                                "key": "shipping_tier",
+                                "value": "{{ecommerce.shipping_tier}}"
+                            },
+                            {
+                                "key": "items",
+                                "value": "{{ecommerce.items}}"
+                            }
+                        ]
+                    }
+                ],
+                "firingTriggerId": [
+                    "7"
+                ]
+            },
+            {
+                "tagId": "8",
+                "name": "GA4 Purchase",
+                "type": "ga4Event",
+                "parameter": [
+                    {
+                        "key": "eventName",
+                        "value": "purchase"
+                    },
+                    {
+                        "key": "parameters",
+                        "value": [
+                            {
+                                "key": "transaction_id",
+                                "value": "{{ecommerce.transaction_id}}"
+                            },
+                            {
+                                "key": "affiliation",
+                                "value": "{{ecommerce.affiliation}}"
+                            },
+                            {
+                                "key": "value",
+                                "value": "{{ecommerce.value}}"
+                            },
+                            {
+                                "key": "tax",
+                                "value": "{{ecommerce.tax}}"
+                            },
+                            {
+                                "key": "shipping",
+                                "value": "{{ecommerce.shipping}}"
+                            },
+                            {
+                                "key": "currency",
+                                "value": "{{ecommerce.currency}}"
+                            },
+                            {
+                                "key": "coupon",
+                                "value": "{{ecommerce.coupon}}"
+                            },
+                            {
+                                "key": "items",
+                                "value": "{{ecommerce.items}}"
+                            }
+                        ]
+                    }
+                ],
+                "firingTriggerId": [
+                    "8"
+                ]
+            },
+            {
+                "tagId": "9",
+                "name": "GA4 Refund",
+                "type": "ga4Event",
+                "parameter": [
+                    {
+                        "key": "eventName",
+                        "value": "refund"
+                    },
+                    {
+                        "key": "parameters",
+                        "value": [
+                            {
+                                "key": "transaction_id",
+                                "value": "{{ecommerce.transaction_id}}"
+                            },
+                            {
+                                "key": "value",
+                                "value": "{{ecommerce.value}}"
+                            },
+                            {
+                                "key": "currency",
+                                "value": "{{ecommerce.currency}}"
+                            },
+                            {
+                                "key": "items",
+                                "value": "{{ecommerce.items}}"
+                            }
+                        ]
+                    }
+                ],
+                "firingTriggerId": [
+                    "9"
+                ]
+            },
+            {
+                "tagId": "10",
+                "name": "GA4 View Promotion",
+                "type": "ga4Event",
+                "parameter": [
+                    {
+                        "key": "eventName",
+                        "value": "view_promotion"
+                    },
+                    {
+                        "key": "parameters",
+                        "value": [
+                            {
+                                "key": "items",
+                                "value": "{{ecommerce.items}}"
+                            }
+                        ]
+                    }
+                ],
+                "firingTriggerId": [
+                    "10"
+                ]
+            },
+            {
+                "tagId": "11",
+                "name": "GA4 Select Promotion",
+                "type": "ga4Event",
+                "parameter": [
+                    {
+                        "key": "eventName",
+                        "value": "select_promotion"
+                    },
+                    {
+                        "key": "parameters",
+                        "value": [
+                            {
+                                "key": "items",
+                                "value": "{{ecommerce.items}}"
+                            }
+                        ]
+                    }
+                ],
+                "firingTriggerId": [
+                    "11"
+                ]
+            }
+        ]
+    }
+}
